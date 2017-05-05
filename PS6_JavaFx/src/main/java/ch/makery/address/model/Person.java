@@ -1,5 +1,6 @@
 package ch.makery.address.model;
 
+import java.sql.Date;
 import java.time.LocalDate;
 
 import javafx.beans.property.IntegerProperty;
@@ -28,7 +29,7 @@ public class Person extends PersonDomainModel {
         this.setStreet(street);
         this.setPostalCode(postalCode);
         this.setCity(city);
-        this.setBirthday((LocalDate.of(1999, 2, 21)));
+        this.setBirthday(((new Date(1999, 2, 21))));
     }
 
 }
